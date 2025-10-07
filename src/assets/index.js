@@ -23,8 +23,6 @@ import postgresql from "./tech/postgresql.svg";
 import go from "./tech/go.svg";
 import java from "./tech/java.svg";
 
-import fablearner from "./company/fablearner.jpeg";
-import xculture from "./company/xculture.jpeg";
 
 import Sponsica from "../assets/Sponsica.svg";
 import mediom from "../assets/mediom.png";
@@ -60,6 +58,4 @@ export {
   reactjs,
   tailwind,
   typescript,
-  xculture,
-  fablearner,
 };

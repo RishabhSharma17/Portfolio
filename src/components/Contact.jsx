@@ -10,8 +10,8 @@ import { slideIn } from "../utils/motion";
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    user_email: "",
     message: "",
   });
 
@@ -32,17 +32,11 @@ const Contact = () => {
     setLoading(true);
 
     emailjs
-      .send(
-        'service_9losf8h',
-        'template_vce42wl',
-        {
-          from_name: form.name,
-          to_name: "Jasmine",
-          from_email: form.email,
-          to_email: "jasminepahwa4567@gmail.com",
-          message: form.message,
-        },
-        'MqNW_6Dk2om_rWQV0'
+      .sendForm(
+        'service_fvyxjjj',        // Your Service ID
+        'template_7i78kao',       // Your Template ID
+        formRef.current,          // Form reference
+        'El8lC9T-lyDYWzELq'       // Your Public Key
       )
       .then(
         () => {
@@ -50,8 +44,8 @@ const Contact = () => {
           alert("Thank you. I will get back to you as soon as possible.");
 
           setForm({
-            name: "",
-            email: "",
+            from_name: "",
+            user_email: "",
             message: "",
           });
         },
@@ -84,22 +78,24 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               type='text'
-              name='name'
-              value={form.name}
+              name='from_name'
+              value={form.from_name}
               onChange={handleChange}
               placeholder="What's your good name?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
               type='email'
-              name='email'
-              value={form.email}
+              name='user_email'
+              value={form.user_email}
               onChange={handleChange}
               placeholder="What's your web address?"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
           <label className='flex flex-col'>
@@ -111,6 +107,7 @@ const Contact = () => {
               onChange={handleChange}
               placeholder='What you want to say?'
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              required
             />
           </label>
 

@@ -13,13 +13,15 @@ import {
   nodejs,
   mongodb,
   git,
+  fastapi,
   docker,
   Nextjs,
+  devflow,
+  python,
   postgresql,
   truefeedback,
   nimbus,
   mediom,
-  go,
   java,
 } from "../assets";
 
@@ -107,8 +109,12 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "Go",
-    icon: go,
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "FastAPI",
+    icon: fastapi,
   },
   {
     name: "Docker",
@@ -134,6 +140,32 @@ const experiences = [
 
 
 const projects = [
+  {
+    name: "DevFlow",
+    description:
+    "A full-stack task and project management web app built with Next.js, FastAPI, and MongoDB. Implemented JWT-based authentication with RBAC, optimized MongoDB queries using compound indexes (40% faster retrieval), enforced clean architecture principles, ensured atomic task updates, and containerized services with Docker for consistent deployments.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "fastapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: devflow,
+    source_code_link: "https://github.com/RishabhSharma17/Devflow",
+    live_link: "https://devflow-ecru.vercel.app/",
+  },
   {
     name: "TrueFeedback",
     description:
@@ -185,7 +217,7 @@ const projects = [
     image: nimbus,
     source_code_link: "https://github.com/RishabhSharma17/Nimbus",
     live_link: "https://nimbus-khaki-six.vercel.app/",
-  },
+  }, 
   {
     name: "Mediom",
     description:

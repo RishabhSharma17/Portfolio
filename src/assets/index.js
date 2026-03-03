@@ -13,6 +13,7 @@ import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
+import fastapi from "./tech/fastapi.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
@@ -20,13 +21,14 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import Nextjs from "./tech/Nextjs.svg";
 import postgresql from "./tech/postgresql.svg";
-import go from "./tech/go.svg";
+// import go from "./tech/go.svg";
 import java from "./tech/java.svg";
-
+import python from "./tech/python.png"
 
 import Sponsica from "../assets/Sponsica.svg";
 import mediom from "../assets/mediom.png";
 import truefeedback from "../assets/truefeedback.png";
+import devflow from "../assets/devflow.png";
 import nimbus from "../assets/nimbus.png";
 
 
@@ -34,6 +36,7 @@ export {
   Sponsica,
   nimbus,
   mediom,
+  devflow,
   truefeedback,
   logo,
   backend,
@@ -42,6 +45,7 @@ export {
   web,
   github,
   menu,
+  fastapi,
   close,
   css,
   docker,
@@ -51,11 +55,11 @@ export {
   javascript,
   Nextjs,
   java,
-  go,
   mongodb,
   postgresql,
   nodejs,
   reactjs,
   tailwind,
   typescript,
+  python
 };
